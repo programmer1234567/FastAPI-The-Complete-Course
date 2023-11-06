@@ -25,7 +25,7 @@ async def read_book(book_title: str):
             return book
 
 
-@app.get("/books/")
+@app.get("/books")
 async def read_category_by_query(category: str):
     books_to_return = []
     for book in BOOKS:
